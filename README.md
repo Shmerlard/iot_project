@@ -26,7 +26,7 @@ When a threat is detected (Motion or Door Open), the system captures an image, u
 ├── videos/                  # Demo recordings of the system in action
 └── README.md
 ```
-## 🎥 Demos & Media
+## Demos & Media
 
 System Arming & Disarming: [example](./videos/output.mp4)
 
@@ -34,7 +34,7 @@ Intruder Detection (Instant Alert): [example](./videos/output2.mp4)
 
 Authorized Face Unlock: [example](./videos/output3.mp4)
 
-## ⚙️ Hardware Architecture
+## Hardware Architecture
 1. The Peripheral Unit (The "Brain")
 Device: ESP32 DevKit V1
 
@@ -73,7 +73,7 @@ Amazon SNS: Sends email/SMS alerts for intruders.
 
 <img src="./images/sns_example.jpg" width="400" alt="SNS Example">
 
-## 🧠 System Logic (Finite State Machine)
+## System Logic (Finite State Machine)
 The system operates on a robust FSM with the following states:
 
 IDLE: System disarmed. Low power mode (Light Sleep) enabled after 20s inactivity.
@@ -99,7 +99,7 @@ The two units speak a simple custom protocol at 9600 baud:
 
 'A' (Alert/Unknown): Camera tells Alarm Unit an intruder was detected.
 
-## 🚀 Getting Started
+## Getting Started
 Prerequisites  
 Hardware: 2x ESP32s, Keypad, LCD, Jumpers.
 
