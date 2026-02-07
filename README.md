@@ -28,11 +28,11 @@ When a threat is detected (Motion or Door Open), the system captures an image, u
 ```
 ## 🎥 Demos & Media
 
-System Arming & Disarming: [./videos/output.mp4]
+System Arming & Disarming: [example](./videos/output.mp4)
 
-Intruder Detection (Instant Alert): [./videos/output2.mp4]
+Intruder Detection (Instant Alert): [example](./videos/output2.mp4)
 
-Authorized Face Unlock: [./videos/output3.mp4]
+Authorized Face Unlock: [example](./videos/output3.mp4)
 
 ## ⚙️ Hardware Architecture
 1. The Peripheral Unit (The "Brain")
@@ -70,7 +70,8 @@ Lambda (Python): Handles uploads, calls Rekognition, and manages logic.
 Amazon Rekognition: Performs facial comparison (95% confidence threshold).
 
 Amazon SNS: Sends email/SMS alerts for intruders.
-[SNS Example](./images/Screenshot_2026-02-07-15-58-15-88_e307a3f9df9f380ebaf106e1dc980bb6.jpg)
+
+<img src="./images/sns_example.jpg" width="400" alt="SNS Example">
 
 ## 🧠 System Logic (Finite State Machine)
 The system operates on a robust FSM with the following states:
